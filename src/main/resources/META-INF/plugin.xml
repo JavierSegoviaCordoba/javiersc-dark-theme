@@ -1,0 +1,33 @@
+<idea-plugin>
+    <idea-version since-build="193"/>
+
+    <id>com.javiersc.javiersc-dark-theme</id>
+    <name>JavierSC Dark</name>
+    <vendor email="javier@segoviacordoba.com" url="https://javiersc.com">Javier Segovia Córdoba</vendor>
+
+    <description><![CDATA[
+    Javier SC Dark theme based on Ayu Dark for background colors and Darcula for font colors compatible with Material
+    UI.<br>
+    <em>javiersc, ayu, dark, theme, material ui</em>
+    ]]></description>
+
+    <change-notes>Initial release</change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.chrisrm.idea.MaterialThemeUI</depends>
+
+    <extensions defaultExtensionNs="com.chrisrm.idea.MaterialThemeUI">
+        <bundledTheme name="JavierSC Dark" path="themes/javiersc-dark"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <bundledColorScheme path="colors/javiersc-dark" id="JavierSC Dark"/>
+<!--        <themeProvider id="JavierSC Dark" path="/themes/JavierSC.theme.json"/>-->
+<!--        <themeProvider id="JavierSC Dark Contrast" path="/themes/JavierSC Contrast.theme.json"/>-->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
